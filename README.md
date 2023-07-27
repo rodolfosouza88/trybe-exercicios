@@ -1,3 +1,3 @@
-# Fundamentos 2.1 - Página Spotify
+# Meu repositório de exercícios da Trybe
 
-Exercício onde utilizamos conhecimentos de HTML e CSS para criar a página intro do Spotify.
+Este repositório contem todos os exercícios que eu fiz enquanto estudei na Trybe - escola de programação. 
