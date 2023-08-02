@@ -1,7 +1,165 @@
-#logo {
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, 'Montserrat', sans-serif;
+  }
+  
+  .header {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header-container {
     background-color: black;
-}
-
-#menu {
+  }
+  
+  .header a, .premium a {
+    text-decoration: none;
     color: white;
-}
+  }
+  
+  .header img {
+    width: 130px;
+    vertical-align: middle;
+  }
+  
+  .header ul {
+    display: inline-block;
+    padding-left: 50%;
+    font-weight: bold;
+  }
+  
+  .header li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  
+  .header ul li a:hover {
+    color:rgb(61, 215, 81);
+  }
+  
+  .premium {
+    background-color: rgb(29, 117, 222);
+    color: white;
+    padding: 40px 135px 25px;
+  }
+  
+  .premium p, h1 {
+    padding-top: 40px;
+  }
+  
+  .premium p {
+    padding-top: 40px;
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  
+  .premium a {
+    font-size: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 100px;
+    font-size: 13px;
+  }
+  
+  #comece-agora {
+    border: 2px solid black;
+    background-color: black;
+  }
+  
+  #ver-planos {
+    border: 2px solid white;
+  }
+  
+  #comece-agora:hover, #ver-planos:hover {
+    transform: scale(1.05);
+  } 
+  
+  .why-premium {
+    text-align: center;
+    padding: 80px 100px;
+  }
+  
+  .why-premium div {
+    display: inline-block;
+    /* padding-top: 60px; */
+    padding: 60px 30px;
+  }
+  
+  .why-premium img {
+    width: 130px;
+    margin-bottom: 40px;
+  }
+  
+  .why-premium h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .texto1 {
+    padding-bottom: 17px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .choose-plans {
+    background-color: #efefef;
+    padding: 80px 100px;
+    text-align: center;
+  }
+  
+  .choose-plans h2 {
+    font-size: 35px;
+    padding-bottom: 7px;
+  }
+  
+  .bands {
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 450px;
+    margin: 30px auto;
+    border: 10px solid transparent;
+    border-image: linear-gradient(90deg,rgb(37, 101, 197),rgb(170, 33, 183)) 10;
+  }
+  
+  .bands h3 {
+    font-size: 25px;
+  }
+  
+  .bands ol {
+    padding: 10px;
+  }
+  
+  .bands a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .bands li {
+    list-style: none;
+  }
+  
+  button {
+    background-color: rgb(69, 69, 207);
+    padding: 20px;
+    border-radius: 20px;
+    border: white;
+  }
+  
+  .bands button a {
+    text-decoration: none;
+    font: 20px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  button:hover {
+    background-color: brown;
+  }
