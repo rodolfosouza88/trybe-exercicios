@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/barata.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>GUStosão Lanches</title>
+</head>
+
+<body>
+  <header>
+    <h1>🍔 GUStosão Lanches 🍔</h1>
+  </header>
+
+  <main>
+    <form action="" method="get" id="form">
+      <h4>Identificação:</h4>
+      <div class="user">
+        <label for="name">Nome:</label>
+        <input type="text" name="Name" id="name" required>
+
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="E-mail" id="email">
+      </div>
+
+      <div class="picture">
+        <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png" alt="Avatar sem foto" class="picture" id="foto-input">
+      </div>
+
+      <br><br>
+
+      <label for="foto">Foto:</label>
+      <input type="file" name="Foto" id="foto">
+
+      <br><br>
+
+      <h4>Tamanho:</h4>
+      <select name="Tamanho" id="tamanhoLanche"></select>
+
+      <br><br>
+
+      <h4>Adicional de Abacaxi:</h4>
+      <label for="!sim">!Sim</label>
+      <input type="radio" name="Abacaxi" id="!sim" value="Não" checked>
+      <br>
+      <label for="nao">Não</label>
+      <input type="radio" name="Abacaxi" id="nao" value="Não">
+
+      <br><br>
+
+      <h4>Ovo frito:</h4>
+      <label for="ovo">Quantidade: (R$1,00 cada)</label>
+      <input type="number" name="Ovos" id="ovo" min="3" max="10" value="3">
+
+      <br><br>
+
+      <h4>Molhos:</h4>
+      <label for="">(R$2,00 cada)</label>
+      <br>
+      <label for="molho-madeira">Molho Madeira</label>
+      <input type="checkbox" name="Molho" id="molho-madeira" value="Madeira">
+      <br>
+      <label for="molho-barbecue">Molho Barbecue</label>
+      <input type="checkbox" name="Molho" id="molho-barbecue" value="Barbecue">
+      <br>
+      <label for="molho-caseiro">Molho Caseiro da Casa</label>
+      <input type="checkbox" name="Molho" id="molho-caseiro" value="Caseiro">
+      <br>
+      <label for="molho-alecrim">Alecrim Dourado</label>
+      <input type="checkbox" name="Molho" id="molho-alecrim" value="Alecrim Dourado">
+
+      <br><br>
+
+      <label for="">Algum comentário?</label>
+      <br>
+      <textarea name="Comentário" id="" cols="70" rows="6" placeholder="Escreva aqui qualquer coisa..."></textarea>
+
+      <br><br>
+
+      <input type="checkbox" name="Termos" id="aceite-termos" value="Aceito">
+      <label for="aceite-termos">Você aceita colocar sua vida em risco por livre e espontânea vontade?</label>
+
+      <br><br>
+      <button type="submit" id="btn-submit">Enviar</button>
+      <button id="btn-recovery">Recuperar o último pedido</button>
+    </form>
+  </main>
+
+  <aside class="ticket">
+    <br><br><br>
+    == GUSTOSÃO LANCHES ==
+    <br>
+    ☠️ Quem não sobrevive não volta mais ☠️
+    <br><br>
+
+    <p class="ticket-id">Pedido nº <span id="ticket-id"></span></p>
+
+    <div class="left">
+      <ol id="orderList"></ol>
+    </div>
+
+    <br><br><br>
+
+    Obrigado por nunca mais não voltar 💚
+    <br><br><br>
+
+  </aside>
+
+</body>
+<script src="./data.js"></script>
+<script src="./script.js"></script>
+
+</html>
